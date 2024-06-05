@@ -1,55 +1,52 @@
-spam_amounts = 0
-print(spam_amounts)
+def spam(spam_amounts:int)->str:
+    """This is a the first example in the python course, you give the amount of spam and print that much of \"Spam\" """
+    print(spam_amounts)
 
-spam_amounts = spam_amounts + 4
-if spam_amounts > 0:
-    print("But I don't want ANY spam!")
+    spam_amounts = spam_amounts + 4
+    if spam_amounts > 0:
+        print("But I don't want ANY spam!")
 
-viking_songs = "Spam "*spam_amounts
-print(viking_songs)
+    viking_songs = "Spam "*spam_amounts
+    return viking_songs
 
-print(type(spam_amounts))
-print(type(19.95))
+def basic_math(a:int,b:int)->int:
+    """This fuction explains how the basic math works in python"""
+    print(a+b)
+    print(a-b)
+    print(a*b)
+    print(a/b)
+    print(a//b)
+    print(a%b)
+    print(a**b)
+    print(-a)
+def height(hat:int,mine:int)->float:
+    """"This function will caculate the total height of you and your hat, then it will return it in meters"""
+    total_height_meter = (hat + mine)/100
+    return("Height in meters =",total_height_meter, "?")
 
-a = 100
-b = 50
-print(a+b)
-print(a-b)
-print(a*b)
-print(a/b)
-print(a//b)
-print(a%b)
-print(a**b)
-print(-a)
+def minmax(a:int,b:int,c:int)->int:
+    """This function will show you what the min() and max() do"""
+    print(min(a, b, c))
+    print(max(a, b, c))
 
-hat_height_cm = 25
-my_height_cm = 190
-total_height_meter = (hat_height_cm + my_height_cm)/100
-print("Height in meters =",total_height_meter, "?")
+def abs(num:int)->int:
+    """This function shows us what the abs() do (It returns the absolute value of the number)"""
+    return abs(num)
 
-print(min(1, 2, 3))
-print(max(1, 2, 3))
+def area(pi:float, diameter:int):
+    """This function caculates the area of a circle by giving it radius"""
+    radlus = diameter/2
+    area = radlus**2*pi
+    return area
 
-print(abs(32))
-print(abs(-32))
-
-print(float(10))
-print(int(19.9))
-print(int("807")+1)
-
-pi = 3.14159
-diameter = 3
-radlus = diameter/2
-area = radlus**2*pi
-print(area)
-
-a = [1,2,3]
-b = [3,2,1]
-a1 = a
-a = b
-b = a1
-print(a)
-print(b)
+def changing():
+    a = [1,2,3]
+    b = [3,2,1]
+    a1 = a
+    a = b
+    b = a1
+    print(a)
+    print(b)
 
 ac = 121
 bc = 77
